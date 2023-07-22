@@ -1,0 +1,150 @@
+
+/* Universal Styling.. */
+*{
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.3s all ease;
+}
+
+body{
+    background-image: linear-gradient(orange,white,green);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header Styling..*/
+
+#brand-name{
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: 2px solid yellow;
+    transition: 1s all ease ;
+    box-shadow: 0px 0px 5px white;
+  }
+
+#links a{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.856);
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: 18px;
+    transition: 0.3s all ease;
+  }
+
+  #links a:focus{
+    background-color: rgba(255, 68, 0, 0.842);
+    color: white;
+  }
+
+  #links a:hover{
+    background-color: rgba(255, 68, 0, 0.842);
+    color: white;
+  }
+
+  #links a:active{
+    background-color: rgba(255, 68, 0, 0.5);
+    color: white;
+  }
+
+/* Styling Section */
+
+#main-details *{
+    margin-top: 15px;
+}
+
+
+#download-resume{
+    text-decoration: none; 
+    background-color: white; 
+    color: rgb(12, 44, 228);
+    border-radius: 5px; padding: 5px; 
+    box-shadow: 0px 0px 10px rgba(201, 28, 57, 0.925);
+    font-size: 20px;
+  }
+
+  #download-resume:hover{
+    font-size: 21px;
+  }
+
+  #profile-photo{
+    padding: 3px;
+    background : rgb(247, 5, 45);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    width: 200px;
+    height: 200px;
+    transition: 0.5s all ease;
+  }
+
+  table{
+    background-color: rgba(255, 255, 255, 0.7); 
+    margin-top: 5%;
+    height: 300px;
+    color: black; 
+    font-size: 20px; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 4px greenyellow;
+  }
+
+  table .td-center{
+    text-align: center;
+  }
+
+  #languages_known .box{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 240px;
+    width: 240px;
+  }
+
+  #languages_known .box img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 180px;
+    width: 180px;
+    transition: 0.3s all ease;
+    box-shadow: 1px 1px 10px black;
+    opacity: 0.9;
+  }
+
+  #languages_known .box img:hover{
+    height: 190px;
+    width: 190px;
+    opacity: 1;
+  }
+
+
+  .container{
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+/* Styling Footer */
+
+#prev-next-box a{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px orange;
+  }
+
+  #prev-next-box a:focus{
+    background-color:  rgb(21, 139, 31);
+    color: white;
+  }
+
+  #prev-next-box a:hover{
+    background-color: rgb(21, 139, 31);
+    color: white;
+  }
+
+  #prev-next-box a:active{
+    background-color: rgb(17, 105, 24);;
+    color: white;
+  }

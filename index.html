@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a id="brand-name" class="navbar-brand" href="#home" onclick="change_count(this)">Naveen Kumar Gandham</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul id="links" class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home" onclick="change_count(this);">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#qualification" onclick="change_count(this);">Qualification</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#languages_known" onclick="change_count(this);">Languages Known</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5">Contact with</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="mailto:naveenkumar.gandham2000@gmail.com" target="_blank"><img src="images/email.png" alt="Email"></a>
+            <a href="https://wa.me/9515654593" target="_blank"><img src="images/whatsapp.jpg" alt="Whatsapp"></a>
+
+            <style>
+              .modal-body{
+                text-align: center;
+              }
+              .modal-body a{
+                margin-left: 50px;
+              }
+              .modal-body a img{
+                height: 50px;
+                width: 50px;
+                border-radius: 40%;
+                box-shadow: 1px 1px 5px black;
+              }
+            </style>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+    <!-- Resume Details -->
+
+      <!-- Home Details -->
+      <div id="home" style="width: 100%; height: 610px;">
+        <div class="container" style="border-radius: 10px; height: 100%; padding: 10px;">
+          <div class="container-fluid">
+            <div class="row justify-content-center" style="margin-top: 80px;">
+              <div class="col-sm-6" style="text-align: center;">
+                <img id="profile-photo" src="images/profile-photo.jpg" alt="Profile photo not found.." style="opacity: 0.9;">
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row" style="margin-top: 10px; color: white;">
+                <div id="main-details" class="col-sm-12" style="text-align: center;">
+                  <h1><span style="color: rgb(247, 5, 45);">N</span>aveen <span style="color: rgb(94, 5, 146);">K</span>umar <span style="color: rgb(0, 60, 255);">G</span>andham</h1>
+                  <h2>Higher Qualification : MCA <h6>[Master of Computer Applications]</h6></h2>
+                  <div style="margin-top: 20px;">
+                    <a id="download-resume" href="#">Download Resume</a>
+                  </div>
+                </div>
+
+                <style>
+                  #main-details h1,h2,h3,h6{
+                    text-shadow: 1px 1px 1px black;
+                    letter-spacing: 2px;
+                  }
+                </style>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Qualification Details -->  
+
+      <div id="qualification" style="height: 610px;">
+        <div class="container" style="border-radius: 10px;height: 100%;">
+          <div class="row justify-content-center" style="height: 100%;">
+            <div class="col-sm-8">
+              <div class="table-responsive-sm" style="width: 100%;">
+                <table class="table caption-top table-hover text-sm-center">
+                  <caption style="margin-top: 50px;"><h2 style="text-align: center; color: black; text-shadow: 1px 1px 1px blue; letter-spacing: 2px;">Education Details</h2></caption>
+                  <thead>
+                    <th>QUALIFICATION</th>
+                    <th>BOARD / UNIVERSITY</th>
+                    <th>INSTITUTION</th>
+                    <th>YEAR</th>
+                    <th>AGGREGATE</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td-center">M.C.A</td>
+                      <td>Kakatiya University</td>
+                      <td>Kakatiya University</td>
+                      <td>2022-2024</td>
+                      <td>Chasing</td>
+                    </tr>
+                    <tr>
+                      <td class="td-center">B.C.A</td>
+                      <td>Kakatiya University</td>
+                      <td>Bharathi Degree College</td>
+                      <td>2019-2022</td>
+                      <td>89%</td>
+                    </tr>
+                    <tr>
+                      <td class="td-center">M.P.C</td>
+                      <td>Board of Intermediate Education</td>
+                      <td>Vishwa Junior College</td>
+                      <td>2017-2019</td>
+                      <td>73%</td>
+                    </tr>
+                    <tr>
+                      <td class="td-center">S.S.C</td>
+                      <td>Board of Secondary Education</td>
+                      <td>Government High School Narendra Nagar</td>
+                      <td>2016-2017</td>
+                      <td>73%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Languages Known-->
+      <div id="languages_known" style="padding: 10px; height: 600px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12" style="margin-top: 50px;">
+              <h2 style="text-align: center; text-shadow: 1px 1px 1px blue; letter-spacing: 2px;">Programming Languages Known</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="box">
+                <img class="rounded-circle" src="images/html.png" alt="hyper text markup language">
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="box">
+                <img class="rounded-circle" src="images/css.jfif" alt="cascading style sheet">
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="box">
+                <img class="rounded-circle" src="images/javascript.png" alt="Javascript">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="box">
+                <img class="rounded-circle" src="images/php.png" alt="Hypertext Preprocessor">
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="box">
+                <img class="rounded-circle" src="images/java.png" alt="Java">
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="box">
+                <img class="rounded-circle" src="images/sql.png" alt="SQL">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Details -->
+    <footer>
+      <div class="containerfluid fixed-bottom">
+        <div class="container" style="background-color: black">
+          <div class="row justify-content-center">
+            <div id="prev-next-box" class="col-sm-12" style="text-align: center; padding: 10px;">
+              <a href="#" id="prev" onclick="previous();">Prev</a>
+              <a href="#" id="next" onclick="next();" style="margin-left: 100px;">Next</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
